@@ -40,7 +40,7 @@ You can use files that are hosted remotely.
 ./keynote-template-deployment.sh "https://exmaple.com/sample.kth" "My Company Theme" "all"
 ```
 
-You can also use the `file:///` protocol to refer to local files. If you want to refer to `/tmp/sample.kth`, you should run the following command:
+You can also use the `file://` protocol to refer to local files. If you want to refer to `/tmp/sample.kth`, you should run the following command:
 
 ```sh
 ./keynote-template-deployment.sh "file:///tmp/sample.kth" "My Company Theme" "all"
