@@ -63,6 +63,12 @@ print_error_log(){
 
 # MARK: Main script
 
+# Check for the existence of Keynote application
+if [[ ! -e "/Applications/Keynote.app" ]];then
+  print_error_log "It seems that the Keynote application is not installed. Please install it and try again."
+  exit 1
+fi
+
 if [[ "${1}" = "/" ]];then
 	# Jamf uses sends '/' as the first argument
   print_info_log "Shifting arguments for Jamf."
