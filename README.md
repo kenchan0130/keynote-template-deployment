@@ -56,6 +56,7 @@ You can select one of the following values.
 
 - `all`
   - Applies to all local users of the device being run
+  - root privilege is required
 - `current`
   - Applies only to the currently running user
 
