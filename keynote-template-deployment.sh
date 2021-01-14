@@ -96,6 +96,10 @@ if [[ ! "${3:-current}" =~ "^(current|all)$" ]];then
   print_error_log "You need to set type of specify the local users to be deployed. 'current' or 'all'"
   exit 1
 fi
+if [[ "${3}" == "all" ]] && [[ "$(whoami)" != "root" ]];then
+  print_error_log "'all' type should be run with root privileges."
+  exit 1
+fi
 DEPLOY_USER_TYPE="${3:-current}"
 
 if [[ "${DEPLOY_USER_TYPE}" == "current" ]];then
