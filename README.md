@@ -27,8 +27,8 @@ This script supports Jamf Pro.
     1. (Parameter 4) Keynote template URL
     1. (Parameter 5) Display name of theme selector
     1. (Parameter 6) Type of specify the local users to be deployed
-      - `current`
-      - `all`
+        - `current`
+        - `all`
 
 ## Parameters
 
