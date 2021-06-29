@@ -24,9 +24,9 @@ This script supports Jamf Pro.
 1. Upload this script to Jamf Pro.
 1. Create new policy with the script.
 1. Set arguments for the script.
-    1. Keynote template URL
-    1. Display name of theme selector
-    1. Type of specify the local users to be deployed
+    1. (Parameter 4) Keynote template URL
+    1. (Parameter 5) Display name of theme selector
+    1. (Parameter 6) Type of specify the local users to be deployed
       - `current`
       - `all`
 
